@@ -11,5 +11,15 @@ title: Le Wagon - Middleman
     <p class="about">
       <%= link_to "More about this template", "about.html" %>
     </p>
+  <h1>Today is <%= Date.today.strftime("%A, %b %d") %></h1>
+
+  <ul>
+    <% ['Middleman', 'ERB', 'SCSS'].each do |tech| %>
+    <li>
+      I'm playing with <%= tech %>!
+    </li>
+    <% end %>
+  </ul>
   </div>
+
 </div>

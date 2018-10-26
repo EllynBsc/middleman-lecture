@@ -1,0 +1,20 @@
+<h1>Where can you find le wagon?</h1>
+
+<div class="container">
+  <div class="row">
+    <!--   div.col-xs-12.col-sm-4 -->
+    <% %w(berlin rio paris tel-aviv).each do |city| %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: url('https://kitt.lewagon.com/placeholder/cities/<%= city %>')";>
+        <h1><%= city.upcase %></h1>
+      <!--   <img src="https://kitt.lewagon.com/placeholder/cities/<%= city %>" alt=""  height="100px" > -->
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
+<!-- structure -->
+<!-- container + row + col -->
+<!-- inject and you play the place of the div -->
