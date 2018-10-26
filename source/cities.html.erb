@@ -1,20 +1,17 @@
-<h1>Where can you find le wagon?</h1>
 
 <div class="container">
+<h2>Where can you find le wagon?</h2>
   <div class="row">
-    <!--   div.col-xs-12.col-sm-4 -->
-    <% %w(berlin rio paris tel-aviv).each do |city| %>
+    <% data.cities.each do |city| %>
     <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: url('https://kitt.lewagon.com/placeholder/cities/<%= city %>')";>
-        <h1><%= city.upcase %></h1>
-      <!--   <img src="https://kitt.lewagon.com/placeholder/cities/<%= city %>" alt=""  height="100px" > -->
+      <div class="card" style="background-image: url('https://kitt.lewagon.com/placeholder/cities/<%= city.name %>')";>
+        <div>
+        <h2><%= city.name.capitalize %></h2>
+        <p><%= city.address %></p>
+        </div>
       </div>
     </div>
     <% end %>
   </div>
 </div>
 
-
-<!-- structure -->
-<!-- container + row + col -->
-<!-- inject and you play the place of the div -->

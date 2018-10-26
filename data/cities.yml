@@ -1,0 +1,8 @@
+- name: berlin
+  address: "Rudi-Dutschke-Straße 26, 10969 Berlin"
+- name: paris
+  address: "16, villa Gaudelet 75011 Paris"
+- name: rio
+  address: "Copacabana"
+- name: brussels
+  address: "Gare de midi"
